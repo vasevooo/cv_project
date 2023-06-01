@@ -6,6 +6,7 @@ from torchvision import transforms
 
 
 st.markdown("## Brain Tumor Detector")
+st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
 
 
 def main():
