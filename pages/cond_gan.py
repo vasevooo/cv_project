@@ -15,6 +15,7 @@ def generate_image(seed):
     img = generator.predict([noise, label])
     return img.reshape(28, 28)
 
+
 def main():
     st.title('Number Image Generator')
 
@@ -23,6 +24,7 @@ def main():
         image = generate_image(seed)
 
         st.image(image, caption=f'Generated number: {seed}', use_column_width=True)
+
 
 if __name__ == '__main__':
     main()
