@@ -1,74 +1,26 @@
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torchvision.transforms as transforms
-from torchvision.datasets import MNIST
-from torch.utils.data import DataLoader
-import os
-import matplotlib.pyplot as plt
-from torchvision.utils import save_image, make_grid
-from tqdm import tqdm
 import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
+from tensorflow.keras.models import load_model
 
-# Загрузка сохраненной модели
-class GeneratorModel(nn.Module):
-    def __init__(self):
-        super(GeneratorModel, self).__init__()
-        input_dim = 100 + 10
-        output_dim = 784
-        self.label_embedding = nn.Embedding(10, 10)
-        
-        self.hidden_layer1 = nn.Sequential(
-            nn.Linear(input_dim, 256),
-            nn.LeakyReLU(0.2)
-        )
+# Load the model
+generator = load_model('generator_model.h5')
 
-        self.hidden_layer2 = nn.Sequential(
-            nn.Linear(256, 512),
-            nn.LeakyReLU(0.2)
-        )
+@st.cache
+def generate_image(seed):
+    noise = np.random.normal(0, 1, (1, 100))
+    label = np.array([[seed]])
+    img = generator.predict([noise, label])
+    return img.reshape(28, 28)
 
-        self.hidden_layer3 = nn.Sequential(
-            nn.Linear(512, 1024),
-            nn.LeakyReLU(0.2)
-        )
+def main():
+    st.title('Number Image Generator')
 
-        self.hidden_layer4 = nn.Sequential(
-            nn.Linear(1024, output_dim),
-            nn.Tanh()
-        )
-    
-    def forward(self, x, labels):
-        c = self.label_embedding(labels).view(labels.shape[0], -1)
-        x = torch.cat([x, c], 1)
-        output = self.hidden_layer1(x)
-        output = self.hidden_layer2(output)
-        output = self.hidden_layer3(output)
-        output = self.hidden_layer4(output)
-        return output
+    seed = st.slider('Select a number from 0 to 9', 0, 9)
+    if st.button('Generate'):
+        image = generate_image(seed)
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-device
+        st.image(image, caption=f'Generated number: {seed}', use_column_width=True)
 
-generator = GeneratorModel()
-generator.load_state_dict(torch.load("CGAN.pth"))
-generator.eval()
-
-# Задать число от 0 до 9 с помощью ползунка
-number = st.slider("Select a number", 0, 9)
-
-# Функция денормализации изображений
-def denorm(img_tensors):
-    return img_tensors * 0.5 + 0.5
-
-# Генерация изображения при нажатии кнопки "Generate"
-if st.button("Generate"):
-    latent_tensor = torch.randn(1, 100).to(device)
-    label_tensor = torch.tensor([number]).to(device)
-    fake_image = generator(latent_tensor, label_tensor)
-    
-    # Сохранение сгенерированного изображения
-    save_image(denorm(fake_image), "generated_image.png")
-    
-    # Отображение сгенерированного изображения
-    st.image("generated_image.png", caption="Generated Image")
+if __name__ == '__main__':
+    main()
