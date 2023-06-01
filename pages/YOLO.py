@@ -40,7 +40,7 @@ def preprocess_image(image):
 if __name__ == "__main__":
     # Load the pre-trained model
     
-    path_to_weights = 'https://raw.githubusercontent.com/vasevooo/cv_project/main/yolo_model/best.pt'
+    path_to_weights = 'https://github.com/vasevooo/cv_project/blob/d654c0fe25bb35b3e0964df7615ba6a32d902311/yolo_model/best.pt'
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=path_to_weights, force_reload=True)
 
     main()
