@@ -1,10 +1,12 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-from tensorflow.keras.models import load_model
+from tensorflow import keras
+
 
 # Load the model
-generator = load_model('generator_model.h5')
+generator = keras.models.load_model('generator_model.h5')
+
 
 @st.cache
 def generate_image(seed):
