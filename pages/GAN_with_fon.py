@@ -12,7 +12,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 
-img = get_img_as_base64("image.jpg")
+img = get_img_as_base64("https://catherineasquithgallery.com/uploads/posts/2021-02/1612739741_65-p-goluboi-fon-tsifri-110.jpg")
 
 page_bg_img = f"""
 <style>
