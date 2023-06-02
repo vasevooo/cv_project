@@ -19,7 +19,7 @@ def get_img_as_base64(file):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://avatars.mds.yandex.net/i?id=54ad44720bd5396acdd5d1841564407baa7ab94c-5888917-images-thumbs&n=13");
+background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/66122c31140797.5645bc04703bb.jpg");
 background-size: 130%;
 background-position: top left;
 background-repeat: no-repeat;
