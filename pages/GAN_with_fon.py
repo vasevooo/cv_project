@@ -17,7 +17,7 @@ def get_img_as_base64(file):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://avatars.mds.yandex.net/i?id=84aba7b81663a44e6d327fa892c05c306ec800ff-8497423-images-thumbs&n=13");
+background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612739741_65-p-goluboi-fon-tsifri-110.jpg");
 background-size: 180%;
 background-position: top left;
 background-repeat: no-repeat;
