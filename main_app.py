@@ -46,6 +46,11 @@ border: 10px solid #EEEEEE;
 padding: 5% 5% 5% 10%;
 border-radius: 5px;
 }}
+
+body {{
+color: #333333;
+}}
+
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
@@ -70,6 +75,7 @@ with col2:
     st.markdown("<div style='text-align: center; font-size: 25px;'>3. Viktoria K.", unsafe_allow_html=True)
     st.markdown("<div style='text-align: center; font-size: 25px;'>4. Maria K.", unsafe_allow_html=True)
     st.markdown("<div style='text-align: center; font-size: 25px;'>5. Ilvir Kh.", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'> ", unsafe_allow_html=True)
     st.markdown("<div style='text-align: center; font-size: 25px;'> ", unsafe_allow_html=True)
 
 
