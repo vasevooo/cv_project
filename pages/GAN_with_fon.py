@@ -12,7 +12,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 
-img = get_img_as_base64("https://catherineasquithgallery.com/uploads/posts/2021-02/1612739741_65-p-goluboi-fon-tsifri-110.jpg")
+#img = get_img_as_base64("https://catherineasquithgallery.com/uploads/posts/2021-02/1612739741_65-p-goluboi-fon-tsifri-110.jpg")
 
 page_bg_img = f"""
 <style>
@@ -25,7 +25,7 @@ background-attachment: local;
 }}
 
 [data-testid="stSidebar"] > div:first-child {{
-background-image: url("data:image/png;base64,{img}");
+background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612739741_65-p-goluboi-fon-tsifri-110.jpg");
 background-position: center; 
 background-repeat: no-repeat;
 background-attachment: fixed;
