@@ -26,6 +26,7 @@ background-attachment: local;
 
 [data-testid="stSidebar"] > div:first-child {{
 background-image: url("https://ibb.co/ZBkdJRg");
+background-size: 115%;
 background-position: center; 
 background-repeat: no-repeat;
 background-attachment: fixed;
