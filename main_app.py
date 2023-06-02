@@ -33,7 +33,7 @@ background-attachment: fixed;
 }}
 
 [data-testid="stHeader"] {{
-background: rgba(0,0,0,0);
+background: rgba(1,1,1,1);
 }}
 
 [data-testid="stToolbar"] {{
@@ -47,9 +47,7 @@ padding: 5% 5% 5% 10%;
 border-radius: 5px;
 }}
 
-body {{
-color: #333333;
-}}
+
 
 </style>
 """
