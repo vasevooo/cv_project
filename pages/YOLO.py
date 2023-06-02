@@ -77,8 +77,6 @@ st.text("Upload an image and the Detector will determine \nif a tumor is positiv
 with col2:
 
     def main():
-
-
         uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
         if uploaded_image is not None:
