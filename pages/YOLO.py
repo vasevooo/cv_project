@@ -50,7 +50,7 @@ border-radius: 5px;
 
 </style>
 """
-    import streamlit as st
+import streamlit as st
 from PIL import Image
 import torch
 import matplotlib.pyplot as plt
