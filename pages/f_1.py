@@ -41,7 +41,7 @@ def preprocess_image(image):
 if __name__ == "__main__":
     # Load the pre-trained model
     
-    path_to_weights = 'yolo_model/best_f1.pt'
+    path_to_weights = 'yolo_model/best_f1_50e.pt'
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=path_to_weights, force_reload=True)
 
     main()
