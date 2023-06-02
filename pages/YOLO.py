@@ -66,9 +66,7 @@ with col2:
 col1, col2, col3 = st.columns([1,10,1])
 #col1, col2 = st.columns(2)
 
-### Гистограмма total_bill
-with col2:
-    st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
+
 
 
 def main():
