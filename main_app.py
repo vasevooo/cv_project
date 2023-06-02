@@ -50,7 +50,34 @@ border-radius: 5px;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+col1, col2, col3 = st.columns([1,8,1])
+#col1, col2 = st.columns(2)
 
+### Гистограмма total_bill
+with col2:
+# Веб-приложение с использованием Streamlit
+    st.title('Генерация изображений с Conditional GAN')
+col1, col2, col3 = st.columns([2,5,2])
+#col1, col2 = st.columns(2)
+
+### Гистограмма total_bill
+with col2:
+# Веб-приложение с использованием Streamlit
+    
+    number = st.slider('Выберите число:', 0, 9, step=1)
+
+
+ #col1.subheader("Гистограмма total_bill:")
+
+    # Генерация и отображение изображения
+    generated_image = generate_image(number)
+    generated_image_np = generated_image.numpy()  # Преобразование в массив NumPy
+    fig, ax = plt.subplots()
+    ax.scatter([1, 2], [1, 2], color='black')
+    plt.imshow(generated_image_np, cmap='gray')
+    plt.axis('off')
+    fig.set_size_inches(3, 3)
+    st.pyplot(fig)
 
 st.markdown("<span style='color: #333333; font-size: 24px;'># Computer Vision Project by FasterRCNN 🎈</span>", unsafe_allow_html=True)
 
