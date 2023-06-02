@@ -72,11 +72,12 @@ with col2:
 col1, col2, col3 = st.columns([2,5,2])
 
     
+st.text("Upload an image and the Detector will determine \nif a tumor is positive or negative")
+
 with col2:
 
     def main():
 
-        st.text("Upload an image and the Detector will determine \nif a tumor is positive or negative")
 
         uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
