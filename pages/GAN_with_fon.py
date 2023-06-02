@@ -18,7 +18,7 @@ page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
 background-image: url("https://i.ibb.co/rQ0pTTx/imgonline-com-ua-Black-White-KEZW2w9mmw67c.jpg");
-background-size: 100%;
+background-size: 130%;
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: local;
