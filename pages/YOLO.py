@@ -50,23 +50,15 @@ border-radius: 5px;
 
 </style>
 """
-st.markdown(page_bg_img, unsafe_allow_html=True)
+    import streamlit as st
 from PIL import Image
 import torch
 import matplotlib.pyplot as plt
 from torchvision import transforms
 
-col1, col2, col3 = st.columns([1,8,1])
-#col1, col2 = st.columns(2)
 
-### Гистограмма total_bill
-with col2:
-# Веб-приложение с использованием Streamlit
-    st.markdown("## Brain Tumor Detector")
-col1, col2, col3 = st.columns([1,10,1])
-#col1, col2 = st.columns(2)
-
-
+st.markdown("## Brain Tumor Detector")
+st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
 
 
 def main():
@@ -105,3 +97,4 @@ if __name__ == "__main__":
     model = torch.hub.load('ultralytics/yolov5', 'custom', path=path_to_weights, force_reload=True)
 
     main()
+
