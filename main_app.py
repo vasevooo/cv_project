@@ -64,20 +64,8 @@ col1, col2, col3 = st.columns([2,5,2])
 with col2:
 # Веб-приложение с использованием Streamlit
     
-    st.title('Team members:<br>1. Vasily S.<br>2. Anna F.<br>3. Viktoria K.<br>4. Maria K.<br>5. Ilvir Kh.</div>')
+    st.markdown('Team members:<br>1. Vasily S.<br>2. Anna F.<br>3. Viktoria K.<br>4. Maria K.<br>5. Ilvir Kh.</div>')
 
-
- #col1.subheader("Гистограмма total_bill:")
-
-    # Генерация и отображение изображения
-    generated_image = generate_image(number)
-    generated_image_np = generated_image.numpy()  # Преобразование в массив NumPy
-    fig, ax = plt.subplots()
-    ax.scatter([1, 2], [1, 2], color='black')
-    plt.imshow(generated_image_np, cmap='gray')
-    plt.axis('off')
-    fig.set_size_inches(3, 3)
-    st.pyplot(fig)
 
 st.markdown("<span style='color: #333333; font-size: 24px;'># Computer Vision Project by FasterRCNN 🎈</span>", unsafe_allow_html=True)
 
