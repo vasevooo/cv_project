@@ -75,8 +75,10 @@ with col2:
 st.text("Upload an image and the Detector will determine \nif a tumor is positive or negative")
 col1, col2, col3 = st.columns([2,5,2])
 with col2:
-
     def main():
+
+        st.text("Upload an image and the Detector will determine \nif a tumor is positive or negative")
+
         uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
         if uploaded_image is not None:
@@ -109,3 +111,4 @@ with col2:
         model = torch.hub.load('ultralytics/yolov5', 'custom', path=path_to_weights, force_reload=True)
 
         main()
+
