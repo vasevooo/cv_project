@@ -39,6 +39,14 @@ background: rgba(0,0,0,0);
 [data-testid="stToolbar"] {{
 right: 2rem;
 }}
+
+div.css-1n76uvr.e1tzin5v0 {{
+background-color: rgba(238, 238, 238, 0.5);
+border: 10px solid #EEEEEE;
+padding: 5% 5% 5% 10%;
+border-radius: 5px;
+}}
+
 </style>
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
@@ -66,15 +74,23 @@ def generate_image(number):
     generated_image = tf.image.resize(generated_image[None, ...], (28, 28))[0]  # Добавлено [None, ...] для добавления измерения
     return generated_image
 
-# Веб-приложение с использованием Streamlit
-st.title('Генерация изображений с Conditional GAN')
-number = st.slider('Выберите число:', 0, 9, step=1)
-
-col1, col2, col3 = st.columns([2,4,2])
+col1, col2, col3 = st.columns([1,8,1])
 #col1, col2 = st.columns(2)
 
 ### Гистограмма total_bill
 with col2:
+# Веб-приложение с использованием Streamlit
+    st.title('Генерация изображений с Conditional GAN')
+col1, col2, col3 = st.columns([2,5,2])
+#col1, col2 = st.columns(2)
+
+### Гистограмма total_bill
+with col2:
+# Веб-приложение с использованием Streamlit
+    
+    number = st.slider('Выберите число:', 0, 9, step=1)
+
+
  #col1.subheader("Гистограмма total_bill:")
 
     # Генерация и отображение изображения
