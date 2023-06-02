@@ -15,7 +15,7 @@ def get_img_as_base64(file):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://phonoteka.org/uploads/posts/2022-02/1643931520_73-phonoteka-org-p-fon-tekhnologii-svetlii-77.jpg");
+background-image: url("https://trafaret-decor.ru/sites/default/files/2022-12/%D0%A4%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8%20%D0%BF%D0%BE%20%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B8%D0%B8%20%281%29.jpeg");
 background-size: 130%;
 background-position: top left;
 background-repeat: no-repeat;
