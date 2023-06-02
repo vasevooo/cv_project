@@ -11,7 +11,7 @@ st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
 
 def main():
     
-    st.text("Upload an image and the Detector and it will determine \nif a tumor is positive or negative")
+    st.text("Upload an image and the Detector will determine \nif a tumor is positive or negative")
 
     uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
