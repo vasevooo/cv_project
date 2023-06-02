@@ -71,7 +71,7 @@ with col2:
     
     def main():
 
-        st.markdown("<div style='text-align: center; font-size: 30px;'>Upload an image and the Detector will determine \nif a tumor is positive or negative", unsafe_allow_html=True)
+        st.markdown("<div style='font-size: 30px;'>Upload an image and the Detector will determine \nif a tumor is positive or negative", unsafe_allow_html=True)
        
 
         uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
