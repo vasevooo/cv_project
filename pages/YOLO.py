@@ -69,11 +69,11 @@ col1, col2, col3 = st.columns([1,10,1])
 ### Гистограмма total_bill
 with col2:
     st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
-col1, col2, col3 = st.columns([2,5,2])
+
 
     
 st.text("Upload an image and the Detector will determine \nif a tumor is positive or negative")
-
+col1, col2, col3 = st.columns([2,5,2])
 with col2:
 
     def main():
