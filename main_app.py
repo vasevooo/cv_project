@@ -56,7 +56,7 @@ col1, col2, col3 = st.columns([1,8,1])
 ### Гистограмма total_bill
 with col2:
 # Веб-приложение с использованием Streamlit
-    st.title('Генерация изображений с Conditional GAN')
+    st.title('Computer Vision Project by FasterRCNN 🎈')
 col1, col2, col3 = st.columns([2,5,2])
 #col1, col2 = st.columns(2)
 
@@ -64,7 +64,7 @@ col1, col2, col3 = st.columns([2,5,2])
 with col2:
 # Веб-приложение с использованием Streamlit
     
-    number = st.slider('Выберите число:', 0, 9, step=1)
+    st.title('Team members:<br>1. Vasily S.<br>2. Anna F.<br>3. Viktoria K.<br>4. Maria K.<br>5. Ilvir Kh.</div>')
 
 
  #col1.subheader("Гистограмма total_bill:")
