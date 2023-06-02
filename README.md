@@ -32,5 +32,5 @@ Vasiliy Sevostyanov and Maria Kozlova used the YOLOv5 architecture for brain tum
 ### Document Denoising with an Autoencoder on the Denoising Dirty Documents Dataset:
 Ilvir Khasanov developed an autoencoder model for cleaning documents from various types of noise using the Denoising Dirty Documents dataset. Data preparation and the creation of noisy document versions were performed. Then, an autoencoder architecture was constructed, consisting of an encoder, a decoder, and a latent size that represents the compressed representation of the original document. Training involved minimizing a loss function based on comparing the reconstructed document with the original clean document. After training, the model was tested on new noisy documents, and its effectiveness was evaluated based on metrics such as reconstruction accuracy and noise reduction.
 
-### ### Development of a multipage application using the Streamlet platform:
+### Development of a multipage application using the Streamlet platform:
 Vasily Sevostyanov and Maria Kozlova were engaged in the development and visual design of a multipage application using the Streamlite platform.
