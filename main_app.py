@@ -18,7 +18,7 @@ def get_img_as_base64(file):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://phonoteka.org/uploads/posts/2022-02/1643931520_73-phonoteka-org-p-fon-tekhnologii-svetlii-77.jpg");
+background-image: url("https://i.ibb.co/n75r0q1/angryimg.png");
 background-size: 130%;
 background-position: top left;
 background-repeat: no-repeat;
