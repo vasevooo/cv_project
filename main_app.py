@@ -26,7 +26,7 @@ background-attachment: local;
 }}
 
 [data-testid="stSidebar"] > div:first-child {{
-background-image: url("https://klike.net/uploads/posts/2022-11/1668930175_8-3.jpg");
+background-image: url("https://i.ibb.co/n75r0q1/angryimg.png");
 background-position: center; 
 background-repeat: no-repeat;
 background-attachment: fixed;
