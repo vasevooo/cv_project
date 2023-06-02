@@ -13,6 +13,9 @@
 ### Очистка документов от шумов с помощью автоэнкодера на датасете Denoising Dirty Documents:
 Ильвир Хасанов разработал модель автоэнкодера для очистки документов от различных типов шумов на датасете Denoising Dirty Documents. Была проведена подготовка данных и создание шумовых версий документов. Затем была построена архитектура автоэнкодера, состоящая из энкодера, декодера и  latent size, который представляет собой сжатое представление исходного документа. Обучение проходило путем минимизации функции потерь, основанной на сравнении восстановленного документа с исходным чистым документом. После завершения обучения модель была протестирована на новых зашумленных документах, и ее эффективность была оценена по метрикам точности восстановления и снижения уровня шума.
 
+### Разработка multipage-приложение с использованием платформы Streamlit:
+Василий Севостьянов и Мария Козлова занимались разработкой и визуальным оформлением multipage-приложения с использованием платформы Streamlit.
+
 
 # CV_project
 
@@ -28,3 +31,6 @@ Vasiliy Sevostyanov and Maria Kozlova used the YOLOv5 architecture for brain tum
 
 ### Document Denoising with an Autoencoder on the Denoising Dirty Documents Dataset:
 Ilvir Khasanov developed an autoencoder model for cleaning documents from various types of noise using the Denoising Dirty Documents dataset. Data preparation and the creation of noisy document versions were performed. Then, an autoencoder architecture was constructed, consisting of an encoder, a decoder, and a latent size that represents the compressed representation of the original document. Training involved minimizing a loss function based on comparing the reconstructed document with the original clean document. After training, the model was tested on new noisy documents, and its effectiveness was evaluated based on metrics such as reconstruction accuracy and noise reduction.
+
+### ### Development of a multipage application using the Streamlet platform:
+Vasily Sevostyanov and Maria Kozlova were engaged in the development and visual design of a multipage application using the Streamlite platform.
