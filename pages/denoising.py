@@ -3,8 +3,6 @@ import torch
 from PIL import Image
 from torchvision import transforms
 import torch.nn as nn
-import tkinter as tk
-from tkinter import filedialog
 import io
 # Функция для обработки изображения с помощью модели
 
