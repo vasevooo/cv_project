@@ -52,6 +52,8 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 
-st.markdown("# Computer Vision Project by FasterRCNN 🎈")
+st.markdown("<span style='color: #333333; font-size: 24px;'># Computer Vision Project by FasterRCNN 🎈</span>", unsafe_allow_html=True)
 
-st.text ('Team members: \n 1. Vasily S. \n 2. Anna F. \n 3. Viktoria K. \n 4. Maria K. \n 5. Ilvir Kh.')
+st.markdown("<div style='text-align: center; font-size: 18px;'>Team members:<br>1. Vasily S.<br>2. Anna F.<br>3. Viktoria K.<br>4. Maria K.<br>5. Ilvir Kh.</div>", unsafe_allow_html=True)
+
+
