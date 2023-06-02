@@ -106,3 +106,5 @@ with col2:
         model = torch.hub.load('ultralytics/yolov5', 'custom', path=path_to_weights, force_reload=True)
 
         main()
+    st.markdown("<div style='text-align: center; font-size: 25px;'> ", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'> ", unsafe_allow_html=True)
