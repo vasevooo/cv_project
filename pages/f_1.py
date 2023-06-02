@@ -41,7 +41,7 @@ background: rgba(1,1,1,1);
 right: 2rem;
 }}
 
-div.css-1n76uvr.e1tzin5v0 {{
+div.css-ocqkz7.esravye3 {{
 background-color: rgba(238, 238, 238, 0.5);
 border: 10px solid #EEEEEE;
 padding: 5% 5% 5% 10%;
