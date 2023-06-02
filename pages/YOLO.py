@@ -56,9 +56,17 @@ import torch
 import matplotlib.pyplot as plt
 from torchvision import transforms
 
+col1, col2, col3 = st.columns([1,8,1])
+#col1, col2 = st.columns(2)
 
-st.markdown("## Brain Tumor Detector")
-st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
+### Гистограмма total_bill
+with col2:
+# Веб-приложение с использованием Streamlit
+    st.title('Computer Vision Project by FasterRCNN 🎈')
+col1, col2, col3 = st.columns([2,5,2])
+
+    st.markdown("## Brain Tumor Detector")
+    st.sidebar.success("You are currently viewing Brain Tumor Detector Page")
 
 
 def main():
