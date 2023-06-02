@@ -17,7 +17,7 @@ def get_img_as_base64(file):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612739741_65-p-goluboi-fon-tsifri-110.jpg");
+background-image: url("https://kartinkin.net/uploads/posts/2021-01/1611081114_5-p-fon-dlya-prezentatsii-tsifri-8.jpg");
 background-size: 180%;
 background-position: top left;
 background-repeat: no-repeat;
