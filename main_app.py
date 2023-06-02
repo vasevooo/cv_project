@@ -64,16 +64,11 @@ col1, col2, col3 = st.columns([2,5,2])
 with col2:
 # Веб-приложение с использованием Streamlit
     
-    st.markdown("<div style='text-align: center; font-size: 18px;'>Team members:", unsafe_allow_html=True)
-    st.markdown("<div style='text-align: center; font-size: 18px;'>1. Vasily S.", unsafe_allow_html=True)
-    st.markdown("<div style='text-align: center; font-size: 18px;'>2. Anna F.", unsafe_allow_html=True)
-    st.markdown("<div style='text-align: center; font-size: 18px;'>3. Viktoria K.", unsafe_allow_html=True)
-    st.markdown("<div style='text-align: center; font-size: 18px;'>4. Maria K.", unsafe_allow_html=True)
-    st.markdown("<div style='text-align: center; font-size: 18px;'>5. Ilvir Kh.", unsafe_allow_html=True)
-
-
-st.markdown("<span style='color: #333333; font-size: 24px;'># Computer Vision Project by FasterRCNN 🎈</span>", unsafe_allow_html=True)
-
-st.markdown("<div style='text-align: center; font-size: 18px;'>Team members:<br>1. Vasily S.<br>2. Anna F.<br>3. Viktoria K.<br>4. Maria K.<br>5. Ilvir Kh.</div>", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 30px;'>Team members:", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'>1. Vasily S.", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'>2. Anna F.", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'>3. Viktoria K.", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'>4. Maria K.", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'>5. Ilvir Kh.", unsafe_allow_html=True)
 
 
