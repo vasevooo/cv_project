@@ -16,7 +16,7 @@
 
 # CV_project
 
-CV_project is a multi-user project involving 5 individuals: Vasiliy Sevostyanov, Maria Kozlova, Anna Filina, Ildar Khasanov, and Victoria Krasikova. The goal of the project was to develop a multi-page application using the Streamlit platform and apply various computer vision methods to solve tasks.
+CV_project is a multi-user project involving 5 people: Vasiliy Sevostyanov, Maria Kozlova, Anna Filina, Ildar Khasanov, and Victoria Krasikova. The goal of the project was to develop a multi-page application using the Streamlit platform and apply various computer vision methods to solve tasks.
 
 ## Tasks
 
@@ -24,7 +24,7 @@ CV_project is a multi-user project involving 5 individuals: Vasiliy Sevostyanov,
 Victoria Krasikova and Anna Filina worked on developing a Conditional Generative Adversarial Network (CGAN) model to generate handwritten digit images from 0 to 9 based on the MNIST dataset. The CGAN architecture consists of a generator that takes random noise and a specified digit as input and generates the corresponding image. The discriminator evaluates how well the generated image matches the real images from the dataset. The model was trained through iterations of generator and discriminator interactions. After training, the model can generate new digit images, considering the specified digit in the input noise. Deep learning libraries such as TensorFlow or PyTorch were used.
 
 ### Brain Tumor Detection from Images and Formula 1 Car Detection using YOLOv5:
-Vasiliy Sevostyanov and Maria Kozlova utilized the YOLOv5 architecture for brain tumor detection in medical images and Formula 1 car model detection. The training data was annotated using the robolow.com platform, where objects (brain tumors or car models) were labeled in the images. YOLOv5 was trained on this data to learn how to detect and classify the corresponding objects in the images. The training process involved optimizing the model parameters using gradient descent and loss functions.
+Vasiliy Sevostyanov and Maria Kozlova used the YOLOv5 architecture for brain tumor detection in medical images and Formula 1 car model detection. The training data was annotated using the robolow.com platform, where objects (brain tumors or car models) were labeled in the images. YOLOv5 was trained on this data to learn how to detect and classify the corresponding objects in the images. The training process involved optimizing the model parameters using gradient descent and loss functions.
 
 ### Document Denoising with an Autoencoder on the Denoising Dirty Documents Dataset:
 Ilvir Khasanov developed an autoencoder model for cleaning documents from various types of noise using the Denoising Dirty Documents dataset. Data preparation and the creation of noisy document versions were performed. Then, an autoencoder architecture was constructed, consisting of an encoder, a decoder, and a latent size that represents the compressed representation of the original document. Training involved minimizing a loss function based on comparing the reconstructed document with the original clean document. After training, the model was tested on new noisy documents, and its effectiveness was evaluated based on metrics such as reconstruction accuracy and noise reduction.
