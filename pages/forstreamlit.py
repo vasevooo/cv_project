@@ -86,7 +86,7 @@ def clean_image(image, model):
 # Определение главной функции приложения
 def main():
     # Загрузка модели из файла
-    model = torch.load("model.pth", map_location=torch.device('cpu'))
+    model = torch.load("https://github.com/vasevooo/cv_project/tree/main/pages/model.pth", map_location=torch.device('cpu'))
     model.eval()
     # Загрузка изображения и обработка его с помощью модели
     uploaded_file = st.file_uploader("Загрузите изображение с текстом", type=["jpg", "jpeg", "png"])
