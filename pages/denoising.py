@@ -93,6 +93,7 @@ def main():
     model = torch.load("model_denoising.pth", map_location=torch.device('cpu'))
     model.eval()
     # Загрузка изображения и обработка его с помощью модели
+    st.header('Очистка изображения с текстом от шумов')
     uploaded_file = st.file_uploader("Загрузите изображение с текстом", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
