@@ -102,3 +102,5 @@ with col2:
     plt.axis('off')
     fig.set_size_inches(3, 3)
     st.pyplot(fig)
+    st.markdown("<div style='text-align: center; font-size: 25px;'> ", unsafe_allow_html=True)
+    st.markdown("<div style='text-align: center; font-size: 25px;'> ", unsafe_allow_html=True)
